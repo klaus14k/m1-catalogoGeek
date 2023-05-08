@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    padding: 10px 0px;
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: solid 0px;
+    box-shadow: 0px 15px 10px -15px rgba(0,0,0,0.75);
+
+    padding: 20px 25px 35px;
+}
+
+/* classes */
+.headerButton {
+    font-size: 20px;
+    font-weight: 400;
+    color: #0A99FE;
+    background-color:#64c2ed4b;
+    border: none;
+    border-radius: 5px;
+    
+    width: 150px;
+    height: 40px;
+    margin: 0px 3px;
+    padding: 8px 35px;
+}
+.headerButton:hover {
+    color: white;
+    background-color: #0A99FE;
+}
+
+.titleBox {
+    padding: 50px;
+}
+.sectionTitle {
+    font-size: 20px;
+    font-weight: 400;
+    color: #1b1b1b;
+}
+.ulBox {
+    padding: 0px 15px;
+}
+.itemList {
+    overflow-x: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    list-style-type: none;
+}
+.card {
+    height: 275px;
+    width: 207px;
+    margin-right: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    border-radius: 15px;
+    background-color: #ececec;
+}
+.cardImgs {
+    width: 170px;
+    height: 170px;
+}
+
+/* id's */
+#headerImg {
+    width: 205px;
+    height: 67.5px;
+}
+#productName {
+    color: #1b1b1b;
+    font-size: 20px;
+    font-weight: 500;
+}
+#productPrice {
+    color: #868383;
+    font-size: 16px;
+    font-weight: 400;
+}
