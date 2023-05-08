@@ -82,8 +82,6 @@ let paintingsArray = []
 let actionFiguresArray = []
 
 function separateItens (list){
-// list ----->  list[i] -----> list[i].type
-// const currentProductType = currentProduct.type
   for (let i = 0; i < list.length; i++){
     const currentProduct = list[i]
     
