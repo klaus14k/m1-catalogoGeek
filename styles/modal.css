@@ -1,0 +1,69 @@
+#modal_controller {
+    padding: 0;
+    border: 1px solid #0A99FE;
+    border-radius: 25px 0 25px 0;
+    animation: fadeIn 1s normal;
+}
+#modal_controller::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#modal_container {
+    padding: 20px 30px;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}
+
+#modal_header {
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    border: 1px solid #64c2ed4b;
+    border-radius: 25px 0 25px 0;
+    color: #0A99FE;
+    font-size: 22px;
+}
+#modal_header > button {
+    background-color: transparent;
+    border: 0px solid transparent;
+    font-size: 18px;
+    font-weight: 700;
+    transition: 0.66s;
+}
+#modal_header > button:hover {
+    background-color: #64c2ed4b;
+    border-radius: 33%;
+}
+
+#modal_body {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+#modal_body > a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+    transition: 1s;
+}
+#modal_body > a > i {
+    scale: 2.75;
+}
+#modal_body > a:hover {
+    scale: 1.33;
+    color: blueviolet;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

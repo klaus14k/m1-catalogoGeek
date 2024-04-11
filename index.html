@@ -5,37 +5,45 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>GeekWord</title>
-        <script src="script.js" defer></script>
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./styles/index.css">
+        <script src="https://kit.fontawesome.com/8cef29adb8.js" defer crossorigin="anonymous"></script>
+        <script src="./logic/script.js" defer></script>
+        <script src="./logic/modal.js" defer></script>
     </head>
     <body>
         <header>
-            <img id="headerImg" src="logo.svg" alt="Logo da Geek Word">
+            <img id="headerImg" src="./assets/logo.svg" alt="Logo da Geek Word">
             <nav>
-                <button class="headerButton">Products</button>
-                <button class="headerButton">Contacts</button>
-                </nav>
+                <a class="headerButton">Products</a>
+                <button class="headerButton" id="contactButton">Contacts</button>
+            </nav>
         </header>
         <main>
             <section>
-                <div class="titleBox">
-                    <h2 class="sectionTitle">Paintings</h2> 
-                </div>
-
-                <div class="ulBox">
-                    <ul id="ul_1" class="itemList"></ul>
-                </div>
+                <h2 class="sectionTitle">Paintings</h2> 
+                <ul id="paintingsList" class="itemList"></ul>
             </section>
             <section>
-                <div class="titleBox">
-                    <h2 class="sectionTitle">Action Figures</h2> 
-                </div>
-                
-                <div class="ulBox">
-                    <ul id="ul_2" class="itemList"></ul>
-                </div>
+                <h2 class="sectionTitle">Action Figures</h2>                 
+                <ul id="actionFiguresList" class="itemList"></ul>
             </section>
         </main>
+        <footer>
+            <p>Catálogo Geek - 2024</p>
+            <span>Todos os direitos reservados: Klaus Kuhlmann</span>
+        </footer>
+        <dialog id="modal_controller">
+            <div id="modal_container">
+                <div id="modal_header">
+                    <h4>Contacts</h4>
+                    <button id="modal_close">X</button>
+                </div>
+                <nav id="modal_body">
+                    <a href="https://www.linkedin.com/in/klausGkuhlmann/" target="_blank"><i class="fa-brands fa-linkedin" style="color: rgb(30, 48, 80);"></i>Linkedin</a>
+                    <a href="https://github.com/klaus14k" target="_blank"><i class="fa-brands fa-github" style="color: black;"></i>Github</i></a>
+                    <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWsdGDGWwlcnmhZhtKWFcVdSSPSWTmwrMRzcKxmPrfrNPMbJqGztBWtzGdFwgSJFWwNxTlfKQ" target="_blank"><i class="fa-regular fa-envelope" style="color: #e53e3e;"></i>Gmail</a>
+                </nav>
+            </div>
+        </dialog>
     </body>
 </html>
