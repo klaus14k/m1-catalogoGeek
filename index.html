@@ -1,49 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>GeekWorld</title>
-        <link rel="stylesheet" href="./styles/index.css">
-        <script src="https://kit.fontawesome.com/8cef29adb8.js" defer crossorigin="anonymous"></script>
-        <script src="./logic/script.js" defer></script>
-        <script src="./logic/modal.js" defer></script>
-    </head>
-    <body>
-        <header>
-            <img id="headerImg" src="./assets/logo.svg" alt="Logo da Geek Word">
-            <nav>
-                <a class="headerButton">Products</a>
-                <button class="headerButton" id="contactButton">Contacts</button>
-            </nav>
-        </header>
-        <main>
-            <section>
-                <h2 class="sectionTitle">Paintings</h2> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeekWord</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <script type="module" src="./logic/index.js" defer></script>
+    <script src="https://kit.fontawesome.com/8cef29adb8.js" defer crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <img id="headerImg" src="./assets/logo.svg" alt="Logo da Geek Word">
+        <nav>
+            <a href="#productsSection" class="headerButton">Products</a>
+            <button class="headerButton" id="contactButton">Contacts</button>
+        </nav>
+    </header>
+    <main>
+        <div id="bannerSection">
+            <img id="banner" src="./assets/nerdFofo.jpg" alt="Nerd fofo">
+            <h1>Welcome to GeekWord!</h1>
+        </div>
+        <div class="aboutUsContainer">
+            <section class="aboutUsSection">
+                <h2>Who we are</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nihil incidunt quibusdam voluptatem
+                    vitae sint officia, officiis inventore ipsum accusamus et unde doloremque commodi numquam delectus,
+                    necessitatibus id ad minima. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nemo
+                    consequuntur tenetur dignissimos quia. Eligendi a quam maiores assumenda! Itaque consectetur,
+                    assumenda quod eaque a libero ipsum temporibus repudiandae labore?</p>
+            </section>
+            <section class="aboutUsSection">
+                <h2>Our purpose</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nihil incidunt quibusdam voluptatem
+                    vitae sint officia, officiis inventore ipsum accusamus et unde doloremque commodi numquam delectus,
+                    necessitatibus id ad minima. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nemo
+                    consequuntur tenetur dignissimos quia. Eligendi a quam maiores assumenda! Itaque consectetur,
+                    assumenda quod eaque a libero ipsum temporibus repudiandae labore? Lorem, ipsum dolor sit amet
+                    consectetur adipisicing elit. Nisi accusamus excepturi nam dolorem, quidem, eum quasi et illum,
+                    accusantium magnam culpa a ipsum natus. Facere, sunt. Accusantium facilis deleniti odio. Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Cupiditate voluptas blanditiis atque modi ipsum
+                    nostrum, perferendis quod inventore pariatur. Maxime corrupti ab quae magnam vero et, nam id in
+                    accusamus.</p>
+            </section>
+            <section class="aboutUsSection">
+                <h2>How do we make our products</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nihil incidunt quibusdam voluptatem
+                    vitae sint officia, officiis inventore ipsum accusamus et unde doloremque commodi numquam delectus,
+                    necessitatibus id ad minima. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nemo
+                    consequuntur tenetur dignissimos quia. Eligendi a quam maiores assumenda! Itaque consectetur,
+                    assumenda quod eaque a libero ipsum temporibus repudiandae labore? Lorem ipsum dolor, sit amet
+                    consectetur adipisicing elit. Voluptas ipsa accusantium magnam, ex numquam illo laboriosam
+                    recusandae quae sint vel dolor, facilis praesentium harum voluptatibus assumenda fuga nesciunt
+                    reprehenderit earum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero sunt provident
+                    sint impedit tenetur suscipit iure neque voluptates? Qui voluptate deleniti laboriosam perspiciatis
+                    veniam vero pariatur ad tempora aliquid nostrum!</p>
+            </section>
+        </div>
+
+        <section id="productsSection">
+            <div class="productsContainer">
+                <h2 class="sectionTitle">Paintings</h2>
                 <ul id="paintingsList" class="itemList"></ul>
-            </section>
-            <section>
-                <h2 class="sectionTitle">Action Figures</h2>                 
-                <ul id="actionFiguresList" class="itemList"></ul>
-            </section>
-        </main>
-        <footer>
-            <p>Catálogo Geek - 2024</p>
-            <span>Todos os direitos reservados: Klaus Kuhlmann</span>
-        </footer>
-        <dialog id="modal_controller">
-            <div id="modal_container">
-                <div id="modal_header">
-                    <h4>Contacts</h4>
-                    <button id="modal_close">X</button>
-                </div>
-                <nav id="modal_body">
-                    <a href="https://www.linkedin.com/in/klausGkuhlmann/" target="_blank"><i class="fa-brands fa-linkedin" style="color: rgb(30, 48, 80);"></i>Linkedin</a>
-                    <a href="https://github.com/klaus14k" target="_blank"><i class="fa-brands fa-github" style="color: black;"></i>Github</i></a>
-                    <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWsdGDGWwlcnmhZhtKWFcVdSSPSWTmwrMRzcKxmPrfrNPMbJqGztBWtzGdFwgSJFWwNxTlfKQ" target="_blank"><i class="fa-regular fa-envelope" style="color: #e53e3e;"></i>Gmail</a>
-                </nav>
             </div>
-        </dialog>
-    </body>
+            <div class="productsContainer">
+                <h2 class="sectionTitle">Action Figures</h2>
+                <ul id="actionFiguresList" class="itemList"></ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Catálogo Geek - 2024</p>
+        <span>Todos os direitos reservados: Klaus Kuhlmann</span>
+    </footer>
+    <dialog id="modal_controller">
+        <div id="modal_container">
+            <div id="modal_header">
+                <h4>Contacts</h4>
+                <button id="modal_close">X</button>
+            </div>
+            <nav id="modal_body">
+                <a href="https://www.linkedin.com/in/klausGkuhlmann/" target="_blank"><i class="fa-brands fa-linkedin"
+                        style="color: rgb(30, 48, 80);"></i>Linkedin</a>
+                <a href="https://github.com/klaus14k" target="_blank"><i class="fa-brands fa-github"
+                        style="color: black;"></i>Github</i></a>
+                <a href="mailto:klauskuhlmann14@gmail.com" target="_blank"><i class="fa-regular fa-envelope"
+                        style="color: #e53e3e;"></i>Gmail</a>
+            </nav>
+        </div>
+    </dialog>
+</body>
+
 </html>
