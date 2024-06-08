@@ -3,6 +3,7 @@
     border: 1px solid #0A99FE;
     border-radius: 25px 0 25px 0;
     animation: fadeIn 1s normal;
+    scale: 1.25;
 }
 #modal_controller::backdrop {
     background-color: rgba(0, 0, 0, 0.5);
@@ -10,7 +11,7 @@
 #modal_container {
     padding: 20px 30px;
     display: flex;
-    gap: 40px;
+    gap: 55px;
     flex-direction: column;
 }
 
@@ -49,14 +50,14 @@
     align-items: center;
     gap: 20px;
     font-size: 14px;
-    transition: 1s;
+    transition: 0.5s;
+}
+#modal_body > a:hover {
+    scale: 1.1;
+    color: blueviolet;
 }
 #modal_body > a > i {
     scale: 2.75;
-}
-#modal_body > a:hover {
-    scale: 1.33;
-    color: blueviolet;
 }
 
 @keyframes fadeIn {

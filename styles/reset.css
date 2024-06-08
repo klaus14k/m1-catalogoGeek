@@ -13,7 +13,3 @@ button, a {
     font-style: normal;
     text-decoration: none;
 }
-
-a:-webkit-any(:any-link){
-    color: black;
-}
