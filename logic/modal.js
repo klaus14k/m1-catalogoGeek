@@ -14,3 +14,5 @@ function handleModal() {
     closeModal()
 }
 handleModal()
+
+export default handleModal
