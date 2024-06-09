@@ -10,23 +10,31 @@
     --main-color: #0A99FE;
 }
 
+::selection {
+    color: var(--grey-5);
+    background-color: var(--main-color);
+}
+
 html {
     scroll-behavior: smooth;
 }
 body {
-    background: linear-gradient(-45deg, var(--grey-1) 10%, var(--main-color));
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     padding: 10px 0px;
     font-family: "Roboto", sans-serif;
 }
-h1 {
+/* h1 {
     font-size: 40px;
     color: var(--main-color);
-}
+} */
 h2 {
     font-size: 28px;
-    color: var(--grey-0);
+    /* font-weight: 400; */
+    color: var(--grey-5);
 }
 p {
     font-size: 16px;

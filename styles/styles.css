@@ -9,11 +9,11 @@ header {
 .headerButton {
     font-size: 20px;
     font-weight: 400;
-    color: var(--main-color);
+    color: var(--grey-0);
     background-color:#64c2ed4b;
     border: none;
     border-radius: 5px;
-    transition: 0.5s;
+    transition: 0.66s;
     
     width: 150px;
     height: 40px;
@@ -23,9 +23,10 @@ header {
 .headerButton:hover {
     color: var(--grey-0);
     background-color: var(--main-color);
+    box-shadow: var(--main-color) 0px 0px 20px 4px;
 }
 
-#bannerSection {
+/* #bannerSection {
     position: relative;
 }
 #bannerSection > img {
@@ -40,14 +41,14 @@ header {
     padding: 15px 40px;
     border-radius: 0 0 56px 0;
     background-color: var(--grey-1);
-}
+} */
 
 .aboutUsSection {
     padding: 30px 40px;
 }
 
 #productsSection {
-    padding: 100px 40px;
+    padding: 80px 40px;
     display: flex;
     flex-direction: column;
     gap: 80px;
@@ -57,13 +58,13 @@ header {
     flex-direction: column;
     gap: 20px;
 }
-.sectionTitle {
+/* .sectionTitle {
     font-weight: 400;
     color: var(--grey-0);
-}
+} */
 
 .itemList {
-    padding: 20px 40px;
+    padding: 40px 40px;
     overflow-x: auto;
     display: flex;
     gap: 40px;
@@ -86,6 +87,7 @@ header {
 }
 .card:hover{
     border: 2px solid var(--main-color);
+    box-shadow: var(--main-color) 0px 0px 20px 5px;
     scale: 1.1;
 }
 .card-top {
