@@ -26,24 +26,7 @@ header {
     box-shadow: var(--main-color) 0px 0px 20px 4px;
 }
 
-/* #bannerSection {
-    position: relative;
-}
-#bannerSection > img {
-    width: 100%;
-    object-fit: fill;
-    position: relative;
-    opacity: .9;
-}
-#bannerSection > h1 {
-    position: absolute;
-    top: 0;
-    padding: 15px 40px;
-    border-radius: 0 0 56px 0;
-    background-color: var(--grey-1);
-} */
-
-.aboutUsSection {
+.aboutUsBox {
     padding: 30px 40px;
 }
 
@@ -58,10 +41,7 @@ header {
     flex-direction: column;
     gap: 20px;
 }
-/* .sectionTitle {
-    font-weight: 400;
-    color: var(--grey-0);
-} */
+
 
 .itemList {
     padding: 40px 40px;
