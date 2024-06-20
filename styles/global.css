@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 :root {
     --grey-5: #121214;
@@ -25,16 +25,24 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     padding: 10px 0px;
-    font-family: "Roboto", sans-serif;
+    font-family: "Quicksand", sans-serif;
 }
 
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--grey-0);
+    text-shadow: var(--grey-5) 0px 0px 25px;
+}
 h2 {
     font-size: 28px;
-    /* font-weight: 400; */
-    color: var(--grey-5);
+    font-weight: 700;
+    color: var(--grey-0);
+    text-shadow: var(--grey-5) 0px 0px 25px;
 }
-p {
+p  {
     font-size: 16px;
+    font-weight: 400;
     color: var(--grey-5);
 }
 
